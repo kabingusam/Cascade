@@ -1,0 +1,16 @@
+<x-layout>
+@include('partials._hero')
+@include('partials._search')
+
+<!-- <h1>{{$heading ?? ''}}</h2> -->
+
+@foreach($listings as $listing)
+<!-- enables access to the listing card component -->
+    <x-listing-card :listing="$listing" />
+
+@endforeach
+
+<div class="mt-1 p-1">
+    {{$listings->links()}}
+</div>
+</x-layout>
