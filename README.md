@@ -4,7 +4,6 @@
 
 `Front-end` `Back-end` `Portfolio project` `laravel` `php` `MySQL`
 
-
 ### General Info
 ***
 
