@@ -2,9 +2,9 @@
  
 ### Portfolio project:
 
-###link to the landing page:
+### link to the landing page:
 
-(https://cascade-53ac2.web.app)
+https://cascade-53ac2.web.app
 
 
 `Front-end` `Back-end` `Portfolio project` `laravel` `php` `MySQL`
