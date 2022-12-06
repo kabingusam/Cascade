@@ -21,11 +21,11 @@ This is a job/project posting web application where users are able to post devel
 Also users are able to create accounts where they will have the privilege to access any listing that they post, delete or even edit it.
 
 ### The Story
-***
+
 Cascade was motivated by the desire to enable developers to experience ease in job finding and also companies in job posting. Having a simplistic approach in development and also implementation, Cascade thrives in simplicity as its core aspect.
 
 ### Getting Started
-***
+
 Getting started is actually very simple. Even without an account, one is able to see the listed jobs but in order for one to able to post, account creation is necessary.
 
 ### Screenshots
@@ -70,7 +70,7 @@ Result:
 
 
 ### Built With
-***
+
 1. Laravel blade.
 2. HTML 5 & CSS 3.(Tailwind CSS employed)
 3. Alpine JavaScript.
@@ -79,7 +79,7 @@ Result:
 ### Compilation & Commmands:
 
 ### Minimum Requirements
-**
+
 
 Install:
 
