@@ -3,7 +3,7 @@
 ### Portfolio project:
 
 <p align="center">
-  <img src="home.png" width="400\"/>
+  <img src="home.png"/>
 <br>
 
 
