@@ -34,7 +34,7 @@ Getting started is actually very simple. Even without an account, one is able to
 * Home Page:
 
 <p align="center">
-  <img src="home.png" width="400\"/>
+  <img src="home copy.png" width="400\"/>
 <br>
 
 * Sample of listed job:
