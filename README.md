@@ -31,38 +31,38 @@ Getting started is actually very simple. Even without an account, one is able to
 ### Screenshots
 ***
 
-Home Page:
+* Home Page:
 
 <p align="center">
   <img src="home.png" width="400\"/>
 <br>
 
-Sample of listed job:
+* Sample of listed job:
 
 <p align="center">
   <img src="list1.png" width="400\"/>
 <br>
 
-Inside the listing itself:
+* Inside the listing itself:
 
 <p align="center">
   <img src="list2.png" width="400\"/>
 <br>
 
-Registration Page:
+* Registration Page:
 
 <p align="center">
   <img src="list3.png" width="400\"/>
 <br>
 
 
-Job/Project posting page:
+* Job/Project posting page:
 
 <p align="center">
   <img src="list4.png" width="400\"/>
 <br>
 
-Result:
+* Result:
 
 <p align="center">
   <img src="list5.png" width="400\"/>
@@ -99,26 +99,26 @@ Now we are good to go.
 ### Table of Contents
 ***
 
-app: 		This directory contains the core code of the application.
+* app: 		This directory contains the core code of the application.
 
-bootstrap: 	This directory contains the application bootstrapping script.
+* bootstrap: 	This directory contains the application bootstrapping script.
 
-config: 	This directory contains configuration files of application.
+* config: 	This directory contains configuration files of application.
 
-database: 	This folder contains your database migration and seeds.
+* database: 	This folder contains your database migration and seeds.
 
-public: 	This is the application’s document root. It starts the Laravel application.
+* public: 	This is the application’s document root. It starts the Laravel application.
 		It also contains the assets of the application like JavaScript, CSS, Images, etc.
 
-resources: 	This directory contains raw assets such as the LESS & Sass files,
+* resources: 	This directory contains raw assets such as the LESS & Sass files,
 		localization and language files, and Templates that are rendered as HTML.
 
-storage: 	This directory contains App storage, like file uploads etc. Framework
+* storage: 	This directory contains App storage, like file uploads etc. Framework
 		storage (cache), and application-generated logs.
 
-test: 		This directory contains various test cases.
+* test: 		This directory contains various test cases.
 
-vendor: 	This directory contains composer dependencies.
+* vendor: 	This directory contains composer dependencies.
 
 
 ### Authors & Contributers:
