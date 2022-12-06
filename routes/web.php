@@ -24,14 +24,12 @@ use Illuminate\Support\Facades\Route;
 // update - Update listing
 // destroy - Delete listing 
 
-
 //All listings
 Route::get('/', 'App\Http\Controllers\ListingController@index');
 
 //show create form
 Route::get('/listings/create', 'App\Http\Controllers\ListingController@create')
 ->middleware('auth');
-
 
 //Store listing Data
 Route::post('/listings', 'App\Http\Controllers\ListingController@store')
@@ -65,7 +63,6 @@ Route::post('/users', 'App\Http\Controllers\UserController@store');
 //Log User out
 Route::post('/logout', 'App\Http\Controllers\UserController@logout')
 ->middleware('auth');
-
 
 //Show Login Form
 Route::get('/login', 'App\Http\Controllers\UserController@login')->name('login')
