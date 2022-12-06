@@ -122,7 +122,7 @@ Now we are good to go.
 
 
 ### Authors & Contributers:
-Kabingu Sammy. [Github](https://github.com/kabinguSam) / [Twitter](https://twitter.com/kabingu Sammy)
+*kabingu Sammy* - [Github](https://github.com/kabingusam) || [twitter](https://twitter.com/Kabingusammy)
 
 ### Acknowledgments 
 ***
