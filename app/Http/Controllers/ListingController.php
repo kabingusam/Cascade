@@ -27,7 +27,6 @@ class ListingController extends Controller
     public function create(){
         return view('listings.create');
     }
-
     //store listing data
     public function store(Request $request){
         $formFields = $request->validate([
