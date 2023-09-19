@@ -27,6 +27,12 @@ use Illuminate\Support\Facades\Route;
 //All listings
 Route::get('/', 'App\Http\Controllers\ListingController@index');
 
+// Show reach page
+Route::get('/listings/reach', 'App\Http\Controllers\ListingController@reach');
+
+// Show about page
+Route::get('/listings/about', 'App\Http\Controllers\ListingController@about');
+
 //show create form
 Route::get('/listings/create', 'App\Http\Controllers\ListingController@create')
 ->middleware('auth');
@@ -55,7 +61,7 @@ Route::get('/listings/manage', 'App\Http\Controllers\ListingController@manage')
 Route::get('/listings/{listing}', 'App\Http\Controllers\ListingController@show');
 
 //Show Register/Create Form
-Route::get('/register', 'App\Http\Controllers\UserController@register')->middleware('guest');
+Route::get('/register', 'App\Http\Controllers\UserController@register');
 
 //Create new user
 Route::post('/users', 'App\Http\Controllers\UserController@store');

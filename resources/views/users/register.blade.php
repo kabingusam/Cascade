@@ -56,13 +56,6 @@
                     Sign Up
                 </button>
             </div>
-
-            <div class="mt-8">
-                <p>
-                    Already have an account?
-                    <a href="/login" class="text-laravel">Login</a>
-                </p>
-            </div>
         </form>
     </x-card>
 </x-layout>

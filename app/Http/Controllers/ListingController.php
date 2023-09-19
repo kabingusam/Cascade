@@ -23,6 +23,17 @@ class ListingController extends Controller
         ]); 
     }
 
+    //Show reach us page
+    public function reach(){
+        return view('listings.reach');
+    }
+
+    //Show about us page
+    public function about()
+    {
+        return view('listings.about');
+    }
+
     //show create form
     public function create(){
         return view('listings.create');
@@ -31,12 +42,10 @@ class ListingController extends Controller
     public function store(Request $request){
         $formFields = $request->validate([
             'title' => 'required',
-            'company' =>['required', Rule::unique('listings', 'company')],
-            'location' => 'required',
-            'website' => 'required',
-            'email' => ['required', 'email'],
+            'company' =>'required',
             'tags' => 'required',
-            'description' => 'required'
+            'description' => 'required',
+            'price' => 'required'
         ]);
 
         if($request->hasFile('logo')) {
@@ -67,11 +76,9 @@ class ListingController extends Controller
         $formFields = $request->validate([
             'title' => 'required',
             'company' =>['required'],
-            'location' => 'required',
-            'website' => 'required',
-            'email' => ['required', 'email'],
             'tags' => 'required',
-            'description' => 'required'
+            'description' => 'required',
+            'price' => 'required'
         ]);
 
         if($request->hasFile('logo')) {
