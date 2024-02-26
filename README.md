@@ -8,8 +8,6 @@
 3. Alpine JavaScript.
        
 
-### Compilation & Commmands:
-
 ### Minimum Requirements
 
 
