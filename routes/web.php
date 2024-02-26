@@ -33,6 +33,10 @@ Route::get('/listings/reach', 'App\Http\Controllers\ListingController@reach');
 // Show about page
 Route::get('/listings/about', 'App\Http\Controllers\ListingController@about');
 
+//show Test page
+Route::get('/listings/dashboard', 'App\Http\Controllers\ListingController@dashboard')
+->middleware('auth');
+
 //show create form
 Route::get('/listings/create', 'App\Http\Controllers\ListingController@create')
 ->middleware('auth');

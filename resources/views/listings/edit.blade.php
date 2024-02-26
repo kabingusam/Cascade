@@ -86,10 +86,11 @@
             </div>
 
             <div class="mb-6">
-                <button class="bg-laravel text-white rounded py-2 px-4 hover:bg-black">
-                    Update
+                <!-- Update Button -->
+                <button type="submit"
+                    style="padding: 0.5rem 1rem; background-color: #14B789; color: white; border-radius: 0.25rem; border: none; cursor: pointer;">Update
                 </button>
-
+                
                 <a href="/" class="text-black ml-4"> Back </a>
             </div>
         </form>

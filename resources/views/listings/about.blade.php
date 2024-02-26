@@ -1,21 +1,68 @@
 <x-layout>
-    <x-card class="p-10 rounded max-w-lg mx-auto mt-24" style="background-color: #f5f7fa;">
-        <header class="text-center">
-            <h2 class="text-2xl font-bold uppercase mb-1 text-blue-600">
-                About Us
-            </h2>
-            <!-- <p class="mb-4 text-gray-600">Learn more about our mission and values</p> -->
-        </header>
 
-        <div class="text-left"> <!-- Updated text alignment -->
-            <img src="/images/swlogo.png" alt="Logo" class="w-64 h-64 rounded-full mx-auto mb-4 shadow-lg">
-            <p class="text-gray-700">
-                Welcome to our platform! We are your go-to destination for all things computing. As passionate tech enthusiasts, we specialize in providing top-notch computers, printers, and a wide range of computing accessories.
-            </p>
-        <br>
-            <p class="text-gray-700">
-                Dive into our collection, explore our high-performance gadgets, and experience the future of computing. Join us in embracing innovation and unlocking new possibilities with every click, print, and keystroke.
-            </p>
+@include('partials._nav')
+
+<section class="contact section-padding" id="section_5">
+    <div class="container">
+        <div class="row">
+            <div class="clearfix"></div>
+            <div class="col-lg-3 col-md-6 col-12 pe-lg-0">
+                <div class="contact-info contact-info-border-start d-flex flex-column">
+                        <strong class="site-footer-title d-block mb-3">Services</strong>
+
+                    <ul class="footer-menu">
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Websites</a></li>
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Branding</a></li>
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Ecommerce</a></li> 
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">SEO</a></li>
+                    </ul>
+
+                        <li class="social-icon-item"><a href="https://twitter.com/minthu"
+                            class="social-icon-link bi-twitter"></a></li>
+
+                        <li class="social-icon-item"><a href="#" class="social-icon-link bi-instagram"></a></li>
+
+                        <li class="social-icon-item"><a href="#" class="social-icon-link bi-pinterest"></a></li>
+
+                        <li class="social-icon-item"><a href="https://www.youtube.com/templatemo"
+                                class="social-icon-link bi-youtube"></a></li>
+                    </ul>
+
+                    <strong class="site-footer-title d-block mt-4 mb-3">Start a project</strong>
+
+                    <p class="mb-0">I’m available for freelance projects</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12 ps-lg-0">
+                <div class="contact-info d-flex flex-column">
+                    <strong class="site-footer-title d-block mb-3">About</strong>
+
+                    <p class="mb-2">
+                        Joshua is a professional web developer. Feel free to get in touch with me.
+                    </p>
+
+                    <strong class="site-footer-title d-block mt-4 mb-3">Email</strong>
+
+                    <p>
+                        <a href="mailto:hello@josh.design">
+                            hello@josh.design
+                        </a>
+                    </p>
+
+                    <strong class="site-footer-title d-block mt-4 mb-3">Call</strong>
+
+                    <p class="mb-0">
+                        <a href="tel: 120-240-9600">
+                            120-240-9600
+                        </a>
+                    </p>
+                </div>
+            </div>
         </div>
-    </x-card>
+    </div>
+    </div>
+</section>
 </x-layout>
+
+

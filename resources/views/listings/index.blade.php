@@ -2,11 +2,16 @@
 
 @include('partials._hero')
 @include('partials._search')
-<div class="lg:grid lg:grid-cols-2 gap-4 space-y-4 md:space-y-0 mx-4">
-@foreach ($listings as $listing)
-    <x-listing-card :listing="$listing"/>
-@endforeach
-</div>
+<section class="projects section-padding" id="section_4">
+        <div class="container" display="row">
+            <div class="row" display="">
+                <div class="clearfix"></div>
+                @foreach ($listings as $listing)
+                    <x-listing-card :listing="$listing" />
+                @endforeach
+            </div>
+        </div>
+</section>
 <div class="mt-1 p-1">
     {{$listings->links()}}
 </div>

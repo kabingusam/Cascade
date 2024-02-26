@@ -38,6 +38,13 @@ class ListingController extends Controller
     public function create(){
         return view('listings.create');
     }
+    
+    //show Dashboard
+    public function dashboard()
+    {
+        return view('listings.dashboard');
+    }
+
     //store listing data
     public function store(Request $request){
         $formFields = $request->validate([
