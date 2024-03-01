@@ -82,7 +82,7 @@ class UserController extends Controller
             // Check if the authenticated user has the user ID of 1
             if ($user && ($user->id === 1 || $user->id === 2 || $user->id === 3)) {
                 $request->session()->regenerate();
-                return redirect('/')->with('message', 'Logged in!');
+                return redirect('/listings/dashboard')->with('message', 'Logged in!');
             } else {
                 auth()->logout();
                 return back()->withErrors(['email' => 'Access denied. Invalid Credentials'])->onlyInput('email');
@@ -91,17 +91,4 @@ class UserController extends Controller
 
         return back()->withErrors(['email' => 'Invalid Credentials'])->onlyInput('email');
     }
-    // Retrieve All Users
-    public function getAllUsers(Request $request)
-    {
-        // **Caution:** Exposing all user information can be a security risk. Consider using filters or pagination instead.
-        
-        $users = $request->get{
-            User::all()
-         }; // This retrieves all users from the database
-
-        return view('users.all', compact('users')); // Pass the users data to the view
-    }
-
-
 }

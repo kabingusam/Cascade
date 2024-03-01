@@ -81,6 +81,3 @@ Route::get('/login', 'App\Http\Controllers\UserController@login')->name('login')
 //Login In User
 Route::post('/users/authenticate', 'App\Http\Controllers\UserController@authenticate');
 
-// Retrieve Users From the DB
-Route::get('/users/all', 'App\Http\Controllers\UserController@getAllUsers')
-->middleware('auth');
