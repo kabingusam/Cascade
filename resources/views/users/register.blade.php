@@ -51,9 +51,11 @@
                 @enderror
             </div>
 
-            <div class="mb-6">
-                <button type="submit" class="bg-laravel text-white rounded py-2 px-4 hover:bg-black">
-                    Sign Up
+            <div class="mb-6 text-center">
+                <button type="submit" class="bg-laravel text-black rounded py-2 px-4"
+                    style="transition: background-color 0.3s ease-in-out;" onmouseover="this.style.backgroundColor='#14B789';"
+                    onmouseout="this.style.backgroundColor='';">
+                    Sign In
                 </button>
             </div>
         </form>

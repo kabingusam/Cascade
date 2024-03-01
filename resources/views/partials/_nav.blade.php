@@ -30,15 +30,14 @@
                     </span> -->
                     </li>
                     <li>
+                    <li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Edit Mode Active</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="listings/dashboard">Dashboard</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/listings/manage">Manage</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/listings/create">Post</a>
-                    </li>
+                    
                     </li>
                     <li>
                         <form class="inline" method="POST" action="/logout">

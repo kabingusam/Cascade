@@ -14,11 +14,9 @@
             </button>
 
             <a href="/" class="navbar-brand mx-auto mx-lg-0">
-                <!-- <img src="images/swlogo.png"> -->
                 SilentWise</a>
 
             <div class="d-flex align-items-center d-lg-none">
-                
                 <a class="custom-btn btn" href="#section_5">
                     +254720822798
                 </a>
@@ -26,11 +24,11 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-lg-5">
-                @auth
+                    @auth
                     <li>
-                    <!-- <span class="font-mono font-bold uppercase">
+                        <!-- <span class="font-mono font-bold uppercase">
                         Welcome {{ auth()->user()->name }}
-                    </span> -->
+                        </span> -->
                     </li>
                     <li>
                         <li class="nav-item">
@@ -39,17 +37,16 @@
                         <li class="nav-item">
                             <a class="nav-link" href="listings/dashboard">Dashboard</a>
                         </li>
-                        
+
                     </li>
                     <li>
                         <!-- Logout Button -->
-                    <form class="inline" method="POST" action="/logout">
-                        @csrf
-                        <button type="submit"
-                            style="padding: 0.5rem 1rem; background-color: #14B789; color: white; 
+                        <form class="inline" method="POST" action="/logout">
+                            @csrf
+                            <button type="submit" style="padding: 0.5rem 1rem; background-color: #14B789; color: white;
                             border-radius: 0.25rem; border: none; cursor: pointer;">Logout
-                        </button>
-                    </form>
+                            </button>
+                        </form>
 
                     </li>
                     @else
@@ -64,7 +61,6 @@
                     <li class="nav-item">
                         <a class="nav-link click-scroll" href="#section_4">Projects</a>
                     </li>
-                    
 
                 </ul>
                 @endauth
@@ -88,10 +84,9 @@
                 <div class="hero-text">
                     <div class="hero-title-wrap d-flex align-items-center mb-4">
                         <img src="images/swlogo.png" class="avatar-image avatar-image-large img-fluid" alt="">
-                        <!-- <h1 class="hero-title ms-3 mb-0">Hello There!</h1> -->
+                        <!-- <h1 class="hero-title ms-3 mb-0">Welcome</h1> -->
                     </div>
-                    <!-- <h2 class="mb-4">I’m available for freelance work.</h2> -->
-                    <p class="mb-4"><a class="custom-btn btn custom-link" href="#section_2">Let's begin</a></p>
+                    <p class="mb-4"><a class="custom-btn btn custom-link" href="#section_2">Explore Now</a></p>
                 </div>
             </div>
 
@@ -108,5 +103,3 @@
         </path>
     </svg>
 </section>
-
-

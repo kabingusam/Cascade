@@ -88,6 +88,12 @@ h6 {
   font-size: var(--h6-font-size);
 }
 
+h7{
+  font-size: 20px;
+  color: #14B789;
+  padding-top: 15px;
+}
+
 p {
   color: var(--p-color);
   font-size: var(--p-font-size);
@@ -719,7 +725,7 @@ strong {
   overflow: hidden;
   margin-top: 24px;
   margin-bottom: 24px;
-  padding: 40px;
+  padding: 60px;
   transition: all ease 0.5s;
 }
 

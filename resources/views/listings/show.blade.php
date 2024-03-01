@@ -1,7 +1,7 @@
 <x-layout>
 
-@include('partials._nav')
-<section class="projects section-padding" id="section_4">
+    @include('partials._nav')
+    <section class="projects section-padding" id="section_4">
         <div class="container" display="row">
             <div class="row" display="">
                 <div class="clearfix"></div>
@@ -31,8 +31,24 @@
                     <p class="mt-2 text-pink-600 font-semibold">Price ksh {{$listing->price}}</p>
                     <x-listing-tags :tagsCsv="$listing->tags" />
                 </div>
-                </div>
             </div>
+            @auth
+            <td class="px-4 py-8 border-t border-b border-gray-300 text-lg">
+                <a href="/listings/{{$listing->id}}/edit" class="text-blue-400 px-6 py-2 rounded-xl">
+                    <i class="fas fa-edit"></i> Edit
+                </a>
+            </td>
+            <td class="px-4 py-8 border-t border-b border-gray-300 text-lg">
+                <form method="POST" action="/listings/{{$listing->id}}">
+                    @csrf
+                    @method('DELETE')
+                    <button class="text-red-500" type="submit">
+                        <i class="fas fa-trash"></i> Delete
+                    </button>
+                </form>
+            </td>
+            @endauth
         </div>
-</section>
+        </div>
+    </section>
 </x-layout>

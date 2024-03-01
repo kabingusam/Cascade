@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Foundation\Auth\User;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
+use Illuminate\Support\Facades\DB;
+use Mockery\Generator\Method;
 
 class UserController extends Controller
 {
@@ -89,5 +91,17 @@ class UserController extends Controller
 
         return back()->withErrors(['email' => 'Invalid Credentials'])->onlyInput('email');
     }
+    // Retrieve All Users
+    public function getAllUsers(Request $request)
+    {
+        // **Caution:** Exposing all user information can be a security risk. Consider using filters or pagination instead.
+        
+        $users = $request->get{
+            User::all()
+         }; // This retrieves all users from the database
+
+        return view('users.all', compact('users')); // Pass the users data to the view
+    }
+
 
 }

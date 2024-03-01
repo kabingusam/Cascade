@@ -9,12 +9,15 @@ use Illuminate\Http\Request;
 class ListingController extends Controller
 {
     // show all listings
-    public function index(Request $request) {
+    public function index(Request $request)
+    {
         return view('listings.index', [
-            'listings' => Listing::latest()->filter
-            (request(['tag', 'search']))->paginate(6)
+            'listings' => Listing::latest()
+                ->filter(request(['tag', 'search']))
+                ->paginate(6)
         ]);
     }
+
 
     //show single listing
     public function show(Listing $listing) {
@@ -104,8 +107,12 @@ class ListingController extends Controller
         }
 
         //Manage Listings
-        public function manage(){
-            return view('listings.manage', ['listings' => auth()->user()->listings()->get()]);
+        public function manage()
+        {
+            $listings = auth()->user()->listings()->paginate(8); // Change 10 to the number of items per page you want
+
+            return view('listings.manage', compact('listings'));
         }
-    
+
+
 }

@@ -33,7 +33,7 @@ Route::get('/listings/reach', 'App\Http\Controllers\ListingController@reach');
 // Show about page
 Route::get('/listings/about', 'App\Http\Controllers\ListingController@about');
 
-//show Test page
+//show dashboard
 Route::get('/listings/dashboard', 'App\Http\Controllers\ListingController@dashboard')
 ->middleware('auth');
 
@@ -80,3 +80,7 @@ Route::get('/login', 'App\Http\Controllers\UserController@login')->name('login')
 
 //Login In User
 Route::post('/users/authenticate', 'App\Http\Controllers\UserController@authenticate');
+
+// Retrieve Users From the DB
+Route::get('/users/all', 'App\Http\Controllers\UserController@getAllUsers')
+->middleware('auth');

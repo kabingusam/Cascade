@@ -2,6 +2,7 @@
 
 @include('partials._hero')
 @include('partials._search')
+<h7 class="flex flex-col items-center justify-center text-center text:lg">Our Products</h7>
 <section class="projects section-padding" id="section_4">
         <div class="container" display="row">
             <div class="row" display="">
