@@ -44,6 +44,7 @@
         <script src="{{ asset('js1/popper.js') }}"></script>
         <script src="{{ asset('js1/bootstrap.min.js') }}"></script>
         <script src="{{ asset('js1/main.js') }}"></script>
+        
 
     </body>
 </html>

@@ -89,9 +89,12 @@ h6 {
 }
 
 h7{
-  font-size: 20px;
-  color: #14B789;
+  font-size: calc(1.375rem + 1vw);
+  color: #fff;
   padding-top: 15px;
+  font-weight: 700px;
+  font-family: "Inter", sans-serif;
+  /* color: #6a6a6a; */
 }
 
 p {
@@ -306,7 +309,7 @@ strong {
 
 .is-sticky,
 .is-sticky .navbar .container {
-  background: var(--white-color);
+  background: #4b8670 !important;
   box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
 }
 
@@ -1041,7 +1044,7 @@ strong {
   }
 
   .navbar .container {
-    background: var(--white-color);
+    background: #4b8670;
   }
 
   .navbar-brand,

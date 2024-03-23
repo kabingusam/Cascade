@@ -6,6 +6,8 @@
                 <small class="projects-tag">{{$listing->title}}</small>
             </a>
         </div>
+        <small class="projects-tag">ksh {{$listing->price}}</small>
+        
         <a href="{{$listing->logo ? asset('storage/' . $listing->logo) : asset('/images/no-image.png')}}"
             class="popup-image">
             <img src="{{$listing->logo ? asset('storage/' . $listing->logo) : asset('/images/no-image.png')}}"

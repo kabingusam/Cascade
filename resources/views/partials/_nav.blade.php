@@ -1,77 +1,40 @@
-<main> <section class="preloader"> <div class="spinner">
-    <span class="spinner-rotate"></span>
-    </div>
-    </section>
+<!-- Start Header/Navigation -->
+<!-- <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark min-height:100vh" arial-label="Furni navigation bar">
+    <div class="container">
+        <a class="navbar-brand" href="/">SilentWise<span>.</span></a>
 
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni"
+            aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <a href="/" class="navbar-brand mx-auto mx-lg-0">
-                <!-- <img src="images/swlogo.png"> -->
-                SilentWise</a>
-
-            <div class="d-flex align-items-center d-lg-none">
-                <a class="custom-btn btn" href="#section_5">
-                    +254720822798
-                </a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-lg-5">
-                    @auth
-                    <li>
-                        <!-- <span class="font-mono font-bold uppercase">
-                        Welcome {{ auth()->user()->name }}
-                    </span> -->
-                    </li>
-                    <li>
-                    <li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Edit Mode Active</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="listings/dashboard">Dashboard</a>
-                    </li>
-                    
-                    </li>
-                    <li>
-                        <form class="inline" method="POST" action="/logout">
+        <div class="collapse navbar-collapse" id="navbarsFurni">
+            <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+                @auth
+                <li><a class="nav-link" href="listings/dashboard">Dashboard</a></li>
+                <li> -->
+                    <!-- Logout Button -->
+                        <!-- <form class="inline" method="POST" action="/logout">
                             @csrf
-                            <button type="submit" class="nav-link click-scroll">Logout
+                            <button type="submit" style="padding: 0.5rem 1rem; background-color: #14B789; color: white;
+                            border-radius: 0.25rem; border: none; cursor: pointer;">Logout
                             </button>
                         </form>
-                    </li>
-                    @else
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="/listings/about">About</a>
-
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#section_3">Services</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#section_4">Projects</a>
-                    </li>
-                </ul>
+                </li>
                 @endauth
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li><a class="nav-link" href="listings/about">About us</a></li>
+                <li><a class="nav-link" href="listings/reach">Contact us</a></li>
+            </ul>
 
-                <div class="d-lg-flex align-items-center d-none ms-auto">
-                    <a class="custom-btn btn" href="#section_5">
-                        +254-720-822-798
-                    </a>
-                </div>
-            </div>
+            <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+                <li><a class="nav-link" href="#"><img src="{{asset('/images/user.svg')}}"></a></li>
+                <li><a class="nav-link" href="cart.html"><img src="{{asset('/images/cart.svg')}}"></a></li>
+            </ul>
         </div>
-    </nav>
-    </main>
+    </div>
+</nav> -->
+
+
